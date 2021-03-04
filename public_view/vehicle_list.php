@@ -1,34 +1,47 @@
 <?php include('header.php'); ?>
 
-<select class="auto_selector">
-    <option value="">View All Makes</option>
-</select>
-<select class="auto_selector">
-    <option value="">View All Types</option>
-</select>
-<select class="auto_selector">
-    <option value="">View All Classes</option>
-</select>
-<div class="container-fluid sortBy">
-    <p class="sortBy__label">Sort by</label>
-    <form action="." method="POST" class="sortBy__form">
-        <input class="sortBy__form_radio" type="radio" name="sort" id="sort_by_price">
+<form action="." method="POST" class="sortBy__form">
+    <div class="vehicle_dropdown_boxes">
+    <select name="make_id" class="auto_selector text-primary">
+        <option value="">View All Makes</option>
+        <?php foreach ($makes as $make) : ?>
+            <option value=<?= $make['make_id'] ?>><?= $make['make'] ?></option>
+        <?php endforeach; ?>
+    </select>
+    <select name="type_id" class="auto_selector text-primary">
+        <option value="">View All Types</option>
+        <?php foreach ($types as $type) : ?> 
+            <option value=<?= $type['type_id'] ?>><?= $type['type'] ?></option>
+        <?php endforeach; ?>
+    </select> 
+    <select name="class_id" class="auto_selector text-primary">
+        <option value="">View All Classes</option>
+        <?php foreach($classes as $class) : ?>
+            <option value=<?= $class['class_id'] ?>><?= $class['class'] ?></option>
+        <?php endforeach; ?>
+    </select>
+    </div>
+    <div class="sortBy text-center">
+        <p class="sortBy__label">Sort by</label>
+        <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_price" value="price" required>
         <label for="sort_by_price">Price</label>
-        <input class="sortBy__form_radio" type="radio" name="sort" id="sort_by_year">
+        <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_year" value="year" required>
         <label for="sort_by_year">Year</label>
-    <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
-</div>
-<table>
+        <button class="btn btn-primary sortBy__button" type="submit">Submit</button>
+    </div>
+</form>
+<table class="table table-bordered table-primary table-hover">
     <thead>
         <tr>
-            <th>Year</th>
-            <th>Make</th>
-            <th>Model</th>
-            <th>Type</th>
-            <th>Class</th>
-            <th>Price</th>
+            <th scope="col">Year</th>
+            <th scope="col">Make</th>
+            <th scope="col">Model</th>
+            <th scope="col">Type</th>
+            <th scope="col">Class</th>
+            <th scope="col">Price</th>
         </tr>
+    </thead>
+    <tbody>
         <?php foreach($vehicles as $vehicle) : ?>
             <tr>
                 <td><?= $vehicle['year'] ?></td>
@@ -39,9 +52,14 @@
                 <td><?= $vehicle['price'] ?></td>
             </tr>
         <?php endforeach; ?>
-    </thead>
-
+    </tbody>
 </table>
-
+<h2 class="no_items_message text-center">
+    <?php 
+        if(!$vehicles) {
+            echo "No vehicles meet the criteria";
+        }
+    ?>
+</h2>
 
 <?php include('footer.php'); ?>
