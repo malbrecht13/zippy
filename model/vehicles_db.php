@@ -34,12 +34,37 @@
         return $vehicles;
     }
 
+    function get_vehicle_count() {
+        global $db;
+        $query = 'SELECT COUNT(*) FROM vehicles';
+        $statement = $db->prepare($query);
+        $statement->execute();
+        $count = $statement->fetch();
+        $statement->closeCursor();
+        return $count;
+    }
+
     function delete_vehicle($vehicle_id) {
         global $db;
         $query = 'DELETE FROM vehicles
                   WHERE vehicle_id = :vehicle_id';
         $statement = $db->prepare($query);
         $statement->bindValue(':vehicle_id', $vehicle_id);
+        $statement->execute();
+        $statement->closeCursor();
+    }
+
+    function add_vehicle($make_id, $type_id, $class_id, $year, $model, $price) {
+        global $db;
+        $query = 'INSERT INTO vehicles (make_id, type_id, class_id, year, model, price)
+                  VALUES (:make_id, :type_id, :class_id, :year, :model, :price)';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':make_id', $make_id);
+        $statement->bindValue(':type_id', $type_id);
+        $statement->bindValue(':class_id', $class_id);
+        $statement->bindValue(':year', $year);
+        $statement->bindValue(':model', $model);
+        $statement->bindValue(':price', $price);
         $statement->execute();
         $statement->closeCursor();
     }

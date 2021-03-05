@@ -21,11 +21,14 @@
 
     switch($action) {
         case 'add_vehicle':
+        case 'added_vehicle':
             include('controller/vehicles.php');
             break;
         case 'delete_vehicle':
             $vehicle_id = filter_input(INPUT_POST, 'vehicle_id', FILTER_VALIDATE_INT);
             delete_vehicle($vehicle_id);
+            $count = get_vehicle_count();
+            $action = 'deleted_vehicle';
             include('controller/vehicles.php');
             break;
         default:
