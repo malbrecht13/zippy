@@ -49,7 +49,7 @@
                 <td><?= $vehicle['model'] ?></td>
                 <td><?= $vehicle['type'] ?></td>
                 <td><?= $vehicle['class'] ?></td>
-                <td><?= $vehicle['price'] ?></td>
+                <td><?= '$'.number_format($vehicle['price'],2) ?></td>
             </tr>
         <?php endforeach; ?>
     </tbody>
