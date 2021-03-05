@@ -21,6 +21,11 @@
     }
 
     switch($action) {
+        case 'edit_classes':
+        case 'add_class':
+        case 'delete_class':
+            include('controller/classes.php');
+            break;
         case 'edit_types':
         case 'add_type':
         case 'delete_type':

@@ -48,3 +48,23 @@
         $statement->closeCursor();
         return $vehicles; 
     }
+
+    function delete_class($class_id) {
+        global $db;
+        $query = 'DELETE FROM classes
+                  WHERE class_id = :class_id';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':class_id', $class_id);
+        $statement->execute();
+        $statement->closeCursor();
+    }
+
+    function add_class($class) {
+        global $db;
+        $query = 'INSERT INTO classes (class)
+                  VALUES (:class)';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':class', $class);
+        $statement->execute();
+        $statement->closeCursor();
+    }
