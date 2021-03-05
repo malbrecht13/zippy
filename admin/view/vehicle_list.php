@@ -72,8 +72,8 @@
 <h4>
     <?php if($action === 'deleted_vehicle') { ?>
         Vehicle deleted from database<br>
-        Current inventory: <?= $count[0] ?> vehicle<?php if($count[0] != 1) echo 's'; ?>
     <?php } ?>
+    Current total inventory: <?= $count[0] ?> vehicle<?php if($count[0] != 1) echo 's'; ?>
 </h4>
 <div class="edit_vehicles_nav">
     <h3 class="edit_vehicles_nav__header">Edit/View vehicles</h3>

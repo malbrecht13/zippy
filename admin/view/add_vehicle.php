@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
-<h3>Add Vehicle</h3>
-<form action="." method="POST">
+<h3 class="add_vehicle__header">Add Vehicle</h3>
+<form action="." method="POST" class="add_vehicle__form">
     <input type="hidden" name="action" value="added_vehicle">
     <div class="add_vehicle__input">
         <label for="make__drop-down">Make:</label>
@@ -42,16 +42,19 @@
         <label for="price">Price:</label>
         <input id="price" type="number" name="price" min="0" max="99999" required>
     </div>
-    <button class="btn btn-primary" type="submit">Add vehicle</button>
+    <button class="btn btn-primary add_vehicle__button" type="submit">Add vehicle</button>
 </form>
 
 <h4>
     <?php if($action === 'added_vehicle') { ?>
         Vehicle added to database<br>
-        Current inventory: <?= $count[0] ?> vehicle<?php if($count[0] != 1) echo 's' ?>
     <?php } ?>
+    Current inventory: <?= $count[0] ?> vehicle<?php if($count[0] != 1) echo 's' ?>
 </h4>
 
-
+<div class="edit_vehicles_nav">
+    <h3 class="edit_vehicles_nav__header">Edit/View vehicles</h3>
+    <a class="edit_vehicles_nav__link" href=".?action=list_vehicles">View Vehicle List</a>
+</div>
 
 <?php include('../View/footer.php'); ?>

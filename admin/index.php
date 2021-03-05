@@ -13,6 +13,7 @@
     $makes = get_makes();
     $types = get_types();
     $classes = get_classes();
+    $count = get_vehicle_count();
 
     $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);
     if(!$action) {
