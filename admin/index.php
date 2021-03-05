@@ -15,8 +15,14 @@
     $classes = get_classes();
 
     $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);
+    if(!$action) {
+        $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
+    }
 
     switch($action) {
+        case 'add_vehicle':
+            include('controller/vehicles.php');
+            break;
         case 'delete_vehicle':
             $vehicle_id = filter_input(INPUT_POST, 'vehicle_id', FILTER_VALIDATE_INT);
             delete_vehicle($vehicle_id);

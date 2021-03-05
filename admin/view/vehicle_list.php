@@ -69,5 +69,9 @@
         }
     ?>
 </h2>
+<div class="edit_vehicles_nav">
+    <h3 class="edit_vehicles_nav__header">Edit/View vehicles</h3>
+    <a class="edit_vehicles_nav__link" href=".?action=add_vehicle">Add Vehicle</a>
+</div>
 
 <?php include('../View/footer.php'); ?>
