@@ -24,6 +24,11 @@
         <?php endforeach; ?>
         </tbody>
     </table>
+    <h4 class="text-center">
+            <?php if(!$types) { ?>
+                <br>There are no types added yet
+            <?php } ?>
+    </h4>
 </div>
 <h3 class="add_vehicle__header">Add Vehicle Type</h3>
 <form action="." method="POST">

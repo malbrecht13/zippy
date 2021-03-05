@@ -76,7 +76,6 @@
             } else {
                 $vehicles = get_vehicles_by_make_and_price($make_id);
             }
-            include('view/makes_list.php');
         } else if($type_id) {
             if($sort_by === 'year') {
                 $vehicles = get_vehicles_by_type_and_year($type_id);

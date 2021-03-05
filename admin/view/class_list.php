@@ -24,6 +24,11 @@
         <?php endforeach; ?>
         </tbody>
     </table>
+    <h4 class="text-center">
+            <?php if(!$classes) { ?>
+                <br>There are no classes added yet
+            <?php } ?>
+    </h4>
 </div>
 <h3 class="add_vehicle__header">Add Vehicle Class</h3>
 <form action="." method="POST">

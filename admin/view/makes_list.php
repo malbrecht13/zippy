@@ -24,6 +24,11 @@
         <?php endforeach; ?>
         </tbody>
     </table>
+    <h4 class="text-center">
+            <?php if(!$makes) { ?>
+                <br>There are no makes added yet
+            <?php } ?>
+    </h4>
 </div>
 <h3 class="add_vehicle__header">Add Vehicle Make</h3>
 <form action="." method="POST">
