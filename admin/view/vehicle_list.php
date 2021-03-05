@@ -77,7 +77,9 @@
 </h4>
 <div class="edit_vehicles_nav">
     <h3 class="edit_vehicles_nav__header">Edit/View vehicles</h3>
-    <a class="edit_vehicles_nav__link" href=".?action=add_vehicle">Add Vehicle</a>
+    <a class="edit_vehicles_nav__link" href=".?action=list_vehicles">View Full Vehicle List</a><br>
+    <a class="edit_vehicles_nav__link" href=".?action=add_vehicle">Add Vehicle</a><br>
+    <a class="edit_vehicles_nav__link" href=".?action=edit_makes">View/Edit Vehicle Makes</a><br>
 </div>
 
 <?php include('../View/footer.php'); ?>

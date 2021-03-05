@@ -21,6 +21,10 @@
     }
 
     switch($action) {
+        case 'edit_makes':
+        case 'delete_make':
+            include('controller/makes.php');
+            break;
         case 'add_vehicle':
         case 'added_vehicle':
             include('controller/vehicles.php');

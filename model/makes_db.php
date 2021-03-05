@@ -48,3 +48,13 @@
         $statement->closeCursor();
         return $vehicles; 
     }
+
+    function delete_make($make_id) {
+        global $db;
+        $query = 'DELETE FROM makes
+                  WHERE make_id = :make_id';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':make_id', $make_id);
+        $statement->execute();
+        $statement->closeCursor();
+    }

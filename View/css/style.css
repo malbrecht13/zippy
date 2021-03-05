@@ -53,10 +53,6 @@ input[type='radio'] {
     margin: 20px 0;
 }
 
-.add_vehicle {
-    border: 1px solid black;
-}
-
 @media only screen and (min-width: 400px) {
     html {
         font-size: 0.8rem;

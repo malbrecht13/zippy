@@ -39,6 +39,19 @@
             padding: 3px;
             margin-bottom: 10px;
         }
+        .edit_vehicle__form {
+            border: 3px solid black;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 30px;
+            max-width: 300px;
+        }
+        .edit_vehicle_table__td {
+            padding: 5px 0;
+        }
+
     </style>
 </head>
 
