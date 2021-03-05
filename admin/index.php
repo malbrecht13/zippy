@@ -21,6 +21,11 @@
     }
 
     switch($action) {
+        case 'edit_types':
+        case 'add_type':
+        case 'delete_type':
+            include('controller/types.php');
+            break;
         case 'add_make':
         case 'edit_makes':
         case 'delete_make':
