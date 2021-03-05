@@ -21,6 +21,7 @@
     }
 
     switch($action) {
+        case 'add_make':
         case 'edit_makes':
         case 'delete_make':
             include('controller/makes.php');

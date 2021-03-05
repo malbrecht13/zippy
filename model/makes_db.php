@@ -58,3 +58,13 @@
         $statement->execute();
         $statement->closeCursor();
     }
+
+    function add_make($make) {
+        global $db;
+        $query = 'INSERT INTO makes (make)
+                  VALUES (:make)';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':make', $make);
+        $statement->execute();
+        $statement->closeCursor();
+    }

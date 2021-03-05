@@ -51,6 +51,10 @@
         .edit_vehicle_table__td {
             padding: 5px 0;
         }
+        .edit_make__input {
+            margin: 0 auto;
+            max-width: 300px;
+        }
 
     </style>
 </head>
