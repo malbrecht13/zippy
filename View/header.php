@@ -12,7 +12,7 @@
 
     <title>Zippy's Used Autos'</title>
 </head>
-<body>
+<body class="text-center">
     
     <main>
     <h1 class="text-center">🚘 Zippy's Used Autos 🚘</h1>
