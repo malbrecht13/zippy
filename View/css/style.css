@@ -17,6 +17,7 @@ body {
 
 main {
     padding: 20px 0;
+    margin: 0 auto;
 }
 
 .vehicle_dropdown_boxes {
