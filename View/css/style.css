@@ -6,18 +6,17 @@
 
 html {
     font-size: 9px;
-    margin: 0 auto;
 }
 
 body {
     min-height: 100vh;
-    margin: 2px auto;
+    width: 100vw;
     max-width: 1000px;
+    margin: 2px auto;
 }
 
 main {
     padding: 20px 0;
-    margin: 0 auto;
 }
 
 .vehicle_dropdown_boxes {
