@@ -59,8 +59,7 @@ input[type='radio'] {
     max-width: 1000px;
     overflow-y: scroll;
     overflow-x: visible;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    
 }
 
 td {
@@ -91,5 +90,7 @@ td {
 
     .table_body {
         max-height: 400px;
+        margin-left: 25vw;
+        margin-right: 25vw;
     }
 }
