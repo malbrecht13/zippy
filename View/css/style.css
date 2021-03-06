@@ -56,7 +56,6 @@ input[type='radio'] {
 
 .table_body {
     max-height: 200px;
-    max-width: 1000px;
     overflow-y: scroll;
     overflow-x: visible;
     
