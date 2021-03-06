@@ -23,9 +23,9 @@
     </div>
     <div class="sortBy text-center">
         <p class="sortBy__label">Sort by</label>
-        <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_price" value="price" required>
+        <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_price" value="price">
         <label for="sort_by_price">Price</label>
-        <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_year" value="year" required>
+        <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_year" value="year">
         <label for="sort_by_year">Year</label>
         <button class="btn btn-primary sortBy__button" type="submit">Submit</button>
     </div>
