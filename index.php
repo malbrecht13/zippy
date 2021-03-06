@@ -16,5 +16,5 @@
 
     $vehicles = list_vehicles($make_id, $sort_by, $type_id, $class_id);
 
-    include('view/vehicle_list.php');
+    include('View/vehicle_list.php');
       
