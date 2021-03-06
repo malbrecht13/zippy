@@ -59,6 +59,7 @@ input[type='radio'] {
     max-width: 1000px;
     overflow-y: scroll;
     overflow-x: visible;
+    margin: auto;
 }
 
 td {
