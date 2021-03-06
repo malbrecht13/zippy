@@ -25,7 +25,7 @@
         <p class="sortBy__label">Sort by</label>
         <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_price" value="price" <?php if($sort_by !== 'year') {?>checked <?php } ?>>
         <label for="sort_by_price">Price</label>
-        <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_year" value="year">
+        <input class="sortBy__form_radio" type="radio" name="sort_by" id="sort_by_year" value="year" <?php if($sort_by === 'year') {?>checked <?php } ?>>
         <label for="sort_by_year">Year</label>
         <button class="btn btn-primary sortBy__button" type="submit">Submit</button>
     </div>
