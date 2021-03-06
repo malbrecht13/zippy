@@ -1,6 +1,6 @@
 <?php include('../View/header.php'); ?>
 <head>
-    <link rel="stylesheet" href="../View/css/style.css">
+    <!-- <link rel="stylesheet" href="../View/css/style.css"> -->
     <style>
         td {
             font-size: 0.4rem;
