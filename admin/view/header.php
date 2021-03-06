@@ -3,7 +3,12 @@
     <link rel="stylesheet" href="../View/css/style.css">
     <style>
         td {
-            font-size: 0.9rem;
+            font-size: 0.6rem;
+        }
+        @media only screen and (min-width: 375px) {
+            td {
+                font-size: 0.7rem;
+            }   
         }
         .edit_vehicles_nav__header {
             padding-top: 20px;

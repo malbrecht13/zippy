@@ -30,6 +30,7 @@
         <button class="btn btn-primary sortBy__button" type="submit">Submit</button>
     </div>
 </form>
+<div class="table_body">
 <table class="table table-bordered table-primary table-hover">
     <thead>
         <tr>
@@ -53,6 +54,7 @@
             </tr>
         <?php endforeach; ?>
     </tbody>
+    </div>
 </table>
 <h2 class="no_items_message text-center">
     <?php 

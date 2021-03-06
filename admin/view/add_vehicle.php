@@ -57,6 +57,7 @@
     <a class="edit_vehicles_nav__link" href=".?action=list_vehicles">View Full Vehicle List</a><br>
     <a class="edit_vehicles_nav__link" href=".?action=edit_makes">View/Edit Vehicle Makes</a><br>
     <a class="edit_vehicles_nav__link" href=".?action=edit_types">View/Edit Vehicle Types</a><br>
+    <a class="edit_vehicles_nav__link" href=".?action=edit_classes">View/Edit Vehicle Classes</a><br>
 </div>
 
 <?php include('../View/footer.php'); ?>

@@ -30,6 +30,7 @@
         <button class="btn btn-primary sortBy__button" type="submit">Submit</button>
     </div>
 </form>
+<div class="table_body">
 <table class="table table-bordered table-primary table-hover">
     <thead>
         <tr>
@@ -62,6 +63,7 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+</div>
 <h2 class="no_items_message text-center">
     <?php 
         if(!$vehicles) {
