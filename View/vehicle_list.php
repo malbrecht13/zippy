@@ -30,7 +30,7 @@
         <button class="btn btn-primary sortBy__button" type="submit">Submit</button>
     </div>
 </form>
-<div class="table_body">
+<div class="table_body text-center">
 <table class="table table-bordered table-primary table-hover">
     <thead>
         <tr>
