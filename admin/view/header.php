@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="../View/css/style.css">
     <style>
         td {
-            font-size: 0.6rem;
+            font-size: 0.4rem;
         }
         @media only screen and (min-width: 375px) {
             td {
