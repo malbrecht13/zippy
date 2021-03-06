@@ -1,6 +1,6 @@
 <?php
 
-
+$page = 'add';
 
 switch($action) {
     case 'add_vehicle':
@@ -15,6 +15,7 @@ switch($action) {
         include('view/add_vehicle.php');
         break;
     default:
+        $page = 'default';
         $vehicles = list_vehicles($make_id, $sort_by, $type_id, $class_id);
         include('view/vehicle_list.php');
         break;

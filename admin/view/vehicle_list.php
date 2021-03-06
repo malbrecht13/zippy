@@ -77,13 +77,5 @@
     <?php } ?>
     Current total inventory: <?= $count[0] ?> vehicle<?php if($count[0] != 1) echo 's'; ?>
 </h4>
-<div class="edit_vehicles_nav">
-    <h3 class="edit_vehicles_nav__header">Edit/View links</h3>
-    <a class="edit_vehicles_nav__link" href=".?action=list_vehicles">View Full Vehicle List</a><br>
-    <a class="edit_vehicles_nav__link" href=".?action=add_vehicle">Add Vehicle</a><br>
-    <a class="edit_vehicles_nav__link" href=".?action=edit_makes">View/Edit Vehicle Makes</a><br>
-    <a class="edit_vehicles_nav__link" href=".?action=edit_types">View/Edit Vehicle Types</a><br>
-    <a class="edit_vehicles_nav__link" href=".?action=edit_classes">View/Edit Vehicle Classes</a><br>
-</div>
 
-<?php include('../View/footer.php'); ?>
+<?php include('footer.php'); ?>

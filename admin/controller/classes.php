@@ -1,5 +1,7 @@
 <?php 
 
+$page = 'class';
+
 switch($action) {
     case 'add_class':
         $class = filter_input(INPUT_POST, 'class_name', FILTER_SANITIZE_STRING);

@@ -1,5 +1,7 @@
 <?php 
 
+$page = 'type';
+
 switch($action) {
     case 'add_type':
         $type = filter_input(INPUT_POST, 'type_name', FILTER_SANITIZE_STRING);

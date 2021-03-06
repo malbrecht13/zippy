@@ -1,5 +1,7 @@
 <?php 
 
+$page = 'make';
+
 switch($action) {
     case 'add_make':
         $make = filter_input(INPUT_POST, 'make_name', FILTER_SANITIZE_STRING);
